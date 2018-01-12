@@ -1,0 +1,175 @@
+html, body, .row, .container-fluid, .col-md-12,
+.col-md-9, .col-md-3 {
+  margin: 0;
+  padding: 0;
+}
+
+#header-container {
+  height: 100vh;
+}
+
+#header-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-content h1 {
+  font-size: 3vw;
+  margin: auto;
+}
+
+#header-nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 2%;
+}
+
+#main-container {
+
+  position: relative;
+  margin-top: 20vh;
+}
+
+#nav-img-wrapper {
+  margin-top: 20%;
+  position: relative;
+  z-index: 99
+}
+
+.affix {
+  top: 0;
+  //right: 0;
+  //width: 25%;
+  position: fixed;
+  //z-index: 1;
+
+/*  background-image: url("../img/GFBI-logo-bg.svg");
+  background-size: auto 75%;
+  //background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: right;*/
+}
+
+.affix-top {
+  //width: 100%;
+  //z-index: 99
+}
+
+.affix-bottom {
+  position: static;
+//  width: 100%;
+}
+
+/*#aside-nav {
+  background-color: white;
+  //height: 100vh;
+  //padding-top: 5%;
+  //box-sizing: border-box;
+
+  //margin from bootstrap!
+}
+
+#aside-nav ul {
+  list-style: none;
+}
+
+#aside-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}*/
+
+#content-container {
+  //background-color: blue;
+  background: linear-gradient(#ffffff 85%, #00918A 15%); /* Standard syntax */
+  z-index: 1;
+}
+
+
+
+#what-is-GFBI,
+#rationale-for-creating-GFBI,
+#GFBI-objectives,
+#sponsors,
+#contact {
+  //padding: 5%;
+  //box-sizing: border-box;
+  height: 100vh;
+  //position: relative;
+  //margin-top: 20%;
+}
+
+.article {
+  background-color: white;
+  width: 50%;
+  padding: 5%;
+  margin: auto;
+  //background-image: url("../img/white-paper-texture-with-flecks.jpg");
+  //background-image: url("../img/test.jpg");
+  //background-size: cover;
+}
+
+.article h1 {
+  color:  #00918A;
+}
+
+/*==================================================
+ * Effect
+ * ===============================================*/
+.effect {
+  position: relative;
+}
+
+.effect:before, .effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.effect:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.bg-div {
+  height: 50vh;
+  //width: 100%;
+  background-color: white;
+}
+
+#footer-container {
+  background-color: grey;
+  height: 10vh;
+  width: 100%;
+  //background-image: linear-gradient(to bottom right, blue, green);
+}
